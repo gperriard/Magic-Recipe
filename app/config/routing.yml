@@ -1,0 +1,2 @@
+hoax_default:
+    resource: "@HoaxCoreBundle/Resources/config/routing.yml"
