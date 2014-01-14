@@ -1,0 +1,10 @@
+{% extends "HoaxCoreBundle::layout.html.twig" %}
+
+{% block body %}
+    <p>Ingredients</p>
+    <ul>
+        {% for ingredient in ingredients %}
+           <li>{{ ingredient.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

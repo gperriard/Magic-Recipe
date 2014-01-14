@@ -1,3 +1,7 @@
 /:
     pattern:  /
     defaults: { _controller: HoaxCoreBundle:Default:index }
+
+ingredients:
+    pattern:  /ingredients
+    defaults: { _controller: HoaxCoreBundle:Ingredient:index }
