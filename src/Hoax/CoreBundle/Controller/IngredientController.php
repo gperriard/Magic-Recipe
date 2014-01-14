@@ -5,6 +5,8 @@ namespace Hoax\CoreBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
+use Doctrine\Common\Persistence\ObjectRepository;
+
 class IngredientController extends Controller
 {
     /**
@@ -25,8 +27,9 @@ class IngredientController extends Controller
     }
 
     /**
-     * Return Ingredient repository
-     * @return \Doctrine\Common\Persistence\ObjectRepository
+     * Return the Ingredient repository
+     *
+     * @return ObjectRepository
      */
     protected function getIngredientRepository()
     {

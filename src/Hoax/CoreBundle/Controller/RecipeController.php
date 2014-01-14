@@ -28,6 +28,7 @@ class RecipeController extends Controller
 
     /**
      * Return the Recipe repository
+     * 
      * @return ObjectRepository
      */
     protected function getRecipeRepository()
