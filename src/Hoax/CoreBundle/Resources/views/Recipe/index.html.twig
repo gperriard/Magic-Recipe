@@ -1,0 +1,12 @@
+{% extends "HoaxCoreBundle::layout.html.twig" %}
+
+{% block title %}{{  parent() }} | Recipes{% endblock %}
+
+{% block body %}
+    <p>Recipes</p>
+    <ul>
+        {% for recipe in recipes %}
+            <li>{{ recipe.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
