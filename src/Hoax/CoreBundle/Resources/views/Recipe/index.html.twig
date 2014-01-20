@@ -3,10 +3,12 @@
 {% block title %}{{  parent() }} | Recipes{% endblock %}
 
 {% block body %}
-    <p>Recipes</p>
+<div class="pure-u-1-2">
+    <h2>Recipes</h2>
     <ul>
         {% for recipe in recipes %}
             <li>{{ recipe.name }}</li>
         {% endfor %}
     </ul>
+</div>
 {% endblock %}

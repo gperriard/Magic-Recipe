@@ -3,10 +3,12 @@
 {% block title %}{{  parent() }} | Ingredients{% endblock %}
 
 {% block body %}
-    <p>Ingredients</p>
+<div class="pure-u-1-2">
+    <h2>Ingredients</h2>
     <ul>
         {% for ingredient in ingredients %}
            <li>{{ ingredient.name }}</li>
         {% endfor %}
     </ul>
+</div>
 {% endblock %}

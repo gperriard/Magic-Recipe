@@ -3,11 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Magic Recipe{% endblock %}</title>
+
+        {% stylesheets
+            '@HoaxCoreBundle/Resources/public/css/pure.min.css'
+        %}
+            <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
+        {% endstylesheets %}
         {% block stylesheets %}{% endblock %}
+
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body '' %}
+        <div class="pure-g-r">
+            {% block body '' %}
+        </div>
         {% block javascripts '' %}
     </body>
 </html>
