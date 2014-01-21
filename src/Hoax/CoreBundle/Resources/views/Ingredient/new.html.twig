@@ -1,0 +1,23 @@
+{% extends "HoaxCoreBundle::layout.html.twig" %}
+
+{% block title %}{{  parent() }} | Recipe - Add{% endblock %}
+
+{% block body %}
+    <div class="pure-u-1-2">
+        {{ form_start(form, {'attr': {'class': 'pure-form pure-form-aligned'}}) }}
+            {{ form_errors(form) }}
+
+            <fieldset>
+                <div class="pure-control-group">
+                    {{ form_label(form.name) }}
+                    {{ form_widget(form.name, { 'attr': {'placeholder': 'Ingredient name'} }) }}
+                    {{ form_errors(form.name) }}
+                </div>
+
+                <div class="pure-controls">
+                    <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                </div>
+            </fieldset>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

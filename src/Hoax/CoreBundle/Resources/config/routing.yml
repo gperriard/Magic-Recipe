@@ -6,6 +6,10 @@ ingredients:
     pattern:  /ingredients
     defaults: { _controller: HoaxCoreBundle:Ingredient:index }
 
+new_ingredient:
+    pattern:  /ingredients/new
+    defaults: { _controller: HoaxCoreBundle:Ingredient:new }
+
 recipes:
     pattern:  /recipes
     defaults: { _controller: HoaxCoreBundle:Recipe:index }
